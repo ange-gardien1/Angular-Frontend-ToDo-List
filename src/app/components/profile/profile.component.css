@@ -1,0 +1,44 @@
+/* Your component-specific CSS file or profile.component.css */
+
+.user-profile {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9; /* Customize the background color */
+  }
+  
+  .user-profile h1 {
+    font-family: 'Your Special Font', sans-serif; /* Replace with your desired special font */
+    font-size: 24px;
+    color: #333; /* Customize the text color */
+    margin-bottom: 10px;
+  }
+  
+  .user-profile p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .user-profile span {
+    font-weight: bold;
+    color: #007bff; /* Customize the color to your liking */
+  }
+  
+  .special-font:after {
+    content: ":";
+    color: #555; /* Customize the color to your liking */
+  }
+  
+  .user-post-list {
+    margin-top: 20px;
+  }
+  
+  .no-posts {
+    font-size: 20px;
+    color: #777; /* Customize the color to your liking */
+    margin-top: 20px;
+  }
+  

@@ -1,0 +1,13 @@
+
+<div class="new-post">
+    <h2>Post Content</h2>
+    <form (submit)="createPost()">
+      <div class="form-group">
+        
+        <textarea id="postContent" name="postContent"[(ngModel)]="newPost.content" rows="2"></textarea>
+       
+      </div>
+      <button type="submit">Create Post</button>
+    </form>
+  </div>
+  

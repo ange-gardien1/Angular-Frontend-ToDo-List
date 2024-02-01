@@ -1,0 +1,25 @@
+<!-- signup.component.html -->
+<div class="signup-form">
+    <h2>Sign Up</h2>
+    <form (submit)="signUp()">
+      <!-- Add input fields for user registration, e.g., name, email, and password -->
+      <label for="FirstName">First Name</label>
+      <input type="text" id="FirstName" name="FirstName" [(ngModel)]="newUser.FirstName">
+      <label for="LastName">Last Name</label>
+      <input type="text" id="LastName" name="LastName" [(ngModel)]="newUser.LastName">
+
+      <label for="Gender">Gender</label>
+      <input type="text" id="Gender" name="Gender" [(ngModel)]="newUser.Gender">
+      <label for="Country">Country</label>
+      <input type="text" id="Country" name="Country" [(ngModel)]="newUser.Country">
+
+      <label for="Bio">Bio</label>
+      <input type="text" id="Bio" name="Bio" [(ngModel)]="newUser.Bio">
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="Email" [(ngModel)]="newUser.Email">
+      <label for ="password">Password</label>
+      <input type="password" id="password" name="Password" [(ngModel)]="newUser.Password">
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>

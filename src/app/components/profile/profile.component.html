@@ -1,0 +1,19 @@
+<div class="user-profile">
+    <h1 class="special-font">User Profile<span *ngIf="profileUser">
+      {{profileUser?.Email}}</span>
+    </h1>
+  
+    <p><span>First Name:</span> {{profileUser?.FirstName}} {{profileUser?.LastName}}</p>
+    <p><span>Country:</span> {{profileUser?.Country}}</p>
+    <p><span>Profile Created:</span> {{profileUser?.createdOn}}</p>
+  
+    <div *ngIf="userPost">
+      <h2 class="special-font">Posts</h2>
+      <app-post-list [postList]="userPost" [canEdit]="myProfile" (reloadPost)="getPosts(profileUser?.userId ?? 0)"></app-post-list>
+    </div>
+  
+    <div *ngIf="!userPost" class="no-posts">
+     There is no post
+    </div>
+  </div>
+  

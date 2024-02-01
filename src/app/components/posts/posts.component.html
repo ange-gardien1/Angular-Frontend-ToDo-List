@@ -1,0 +1,11 @@
+<h1 class="special-font">All Posts</h1>
+<div class="post-list">
+   
+
+    <div class="newPost">
+        <app-new-post (postCreated)=" reloadPost()"></app-new-post>
+    </div>
+  
+    <app-post-list [postList]="postList" ></app-post-list>
+  </div>
+  

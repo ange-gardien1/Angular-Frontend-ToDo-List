@@ -1,0 +1,10 @@
+<form (ngSubmit)="updatePost()">
+    <div class="post-wrap" *ngIf="post">
+        <textarea type="text" name="content" [(ngModel)]="post.content">
+        </textarea>
+    
+        <button>
+            Update
+        </button>
+    </div>
+</form>

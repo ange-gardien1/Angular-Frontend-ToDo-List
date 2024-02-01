@@ -1,0 +1,17 @@
+<div *ngIf="postList" class="post-list">
+    <div *ngFor="let p of postList" class="post">
+      <p class="content">{{p.content}}</p>
+      
+      <div class="post-details">
+        <h4 routerLink="/profile/{{p.user?.userId}}" class="user-link">{{ p.user?.FirstName }}</h4>
+        <span class="created-on">{{p.createdOn}}</span>
+      </div>
+      <div class="action-wrapper" *ngIf="canEdit">
+
+        
+        <a class="post-action edit-post" routerLink="/edit/{{p.postId}}">Edit</a>
+        <a class="delete-post post-action" (click)="deletePost(p?.postId?.toString())">Delete</a>
+
+      </div>
+    </div>
+  </div>

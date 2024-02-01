@@ -1,0 +1,18 @@
+<nav role="navigation">
+    <div class="logo">
+     
+        <a routerLink="/" class="home">post</a>
+    </div>
+    <div class="nav-links">
+        <a *ngIf="!isLoggedIn" routerLink="/signup" title="Sign Up">Sign Up</a>
+        <a *ngIf="!isLoggedIn" routerLink="/signin" title="Sign In">Sign In</a>
+        <a *ngIf="isLoggedIn" routerLink="/profile" title="Profile">My Acoount!{{email}}</a>
+      
+        <a routerLink="/posts" title="Posts">All Posts</a>
+        <a routerLink="/search" title="Search Users">Search Users</a>
+        <span *ngIf="isLoggedIn" (click)=" logout()">Logout</span>
+    </div>
+</nav>
+<main>
+    <router-outlet></router-outlet>
+</main>
